@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="day.css">
+    <title>Wawancara Day 1</title>
+
+    <script>
+        $('.carousel').carousel({
+            interval: false
+        });
+
+        function backToIndex() {
+            window.location = './index.html';
+        }
+    </script>
+  </head>
+  <body>
+    <div class='darkmode-ignore'>
+        <div class='backButton'>
+            <button type='button' class='btn' onclick='backToIndex();'>Kembali</button>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-interval='false'>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class='box'>
+                        <h1>Wawancara 5 Maret 2021</h1>
+                        <img src='./assets/arc1.png' alt='Foto Wawancara Day 1'>
+                        <div class='content'>
+                            <h3>Kru:</h3>
+                            <h3>James Chandra (IF'19)</h3>
+                            <h3>Nathaniel Jason (IF'19)</h3>
+                        </div>
+                    </div>
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                </div>
+                <div class="carousel-item">
+                    <div class='box'>
+                        <h1>James Chandra (IF'19)</h1>
+                        <img class='profpic' src="./assets/james.jpg">
+                        <div class='content'>
+                            <h3>>> Nama panggilannya James.</h3>
+                            <h3>>> Dulu daftar ARC tanpa alasan yang jelas.</h3>
+                            <h3>>> Tapi, ternyata ARC itu asyik!</h3>
+                            <h3>>> Namanya sempet kecoret tidak sengaja dari list kru ARC.</h3>
+                            <h3>>> Magang di Tanihub!</h3>
+                        </div>    
+                    </div>
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                </div>
+                <div class="carousel-item">
+                    <div class='box'>
+                        <h1>Nathaniel Jason (IF'19)</h1>
+                        <img class='profpic' src="./assets/niel.jpg">
+                        <div class='content'>
+                            <h3>>> Nama panggilannya Niel.</h3>
+                            <h3>>> Dulu daftar ARC karena tertarik cyber security.</h3>
+                            <h3>>> Kelihatannya sangat jago, udah punya pengalaman intern!</h3>
+                            <h3>>> Kak Niel banyak berbagi pengalamannya saat intern.</h3>
+                            <h3>>> Magang di Bukit Vista!</h3>
+                        </div>    
+                    </div>
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        const options = {
+            bottom: '10px', // default: '32px'
+            right: '10px', // default: '32px'
+            left: 'unset', // default: 'unset'
+            time: '0s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: true, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+    </script>
+
+  </body>
+</html>
